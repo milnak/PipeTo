@@ -97,7 +97,7 @@ void ShowUsage()
     WriteToStdOut(usage17);
 }
 
-void StdinToStdOut()
+void ProcessStdin()
 {
     while (TRUE)
     {
@@ -199,7 +199,7 @@ int main(int argc, char **argv)
         return 5;
     }
 
-    StdinToStdOut();
+    ProcessStdin();
 
     CloseHandle(tempFileHandle);
     tempFileHandle = INVALID_HANDLE_VALUE;
